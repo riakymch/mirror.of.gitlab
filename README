@@ -1,4 +1,21 @@
 
 Idea is to test mirroing of this empty project from gitlab to github
 
+The procedure is as follows
+ 1. I imported the gitlab repo to github
 
+ 2. In the project of gitlab I went to Settings->Repository->Mirroring
+   Repositories
+
+ 3. As git repository URL I inserted "ssh://git@github.com/<group>/<repo>.git
+
+ 4. I Detected the host keys
+
+ 5. Changed Authentification from Password to SSH Public Key and "Pressed
+   Mirror repository"
+
+ 6. Then I copied the created ssh key from mirrored repository -> button on
+   the right hand side
+
+ 7. In the Github repo I went to Settings->Deploy Keys and added the deploy
+   key (SSH key created by gitlab)
